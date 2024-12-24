@@ -1,0 +1,226 @@
+/* Created By AkinaCss */
+/* Detay area */
+
+.detayscreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 0;
+}
+
+.detayscreen div {
+    flex: 1 1 20%;
+    width: 20%;
+    max-width: 20%;
+    border-right: 1px solid #eaeaea;
+    z-index: 1;
+}
+
+/* Detay Main area Css End */
+
+.detayMain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 50px;
+}
+
+.detayImg {
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+}
+.detayImg img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.detayTxt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px;
+    background-color: var(--white);
+}
+
+.detayMap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    color: var(--textclr);
+}
+
+.detayMap a {
+    color: var(--textclr);
+    font-family: var(--txt);
+    font-size: 14px;
+}
+.detayMap a:hover {
+    color: var(--red);
+}
+.detayMap p {
+    color: var(--textclr);
+    font-family: var(--txt);
+    font-size: 14px;
+}
+
+.detayHeader {
+    width: 80%;
+    font-size: 3.2rem;
+    font-weight: 800;
+    font-family: var(--txt);
+    text-transform: uppercase;
+    line-height: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Detay Main area Css End */
+
+/* =================================================================== */
+
+/* Text area Css Start */
+
+.detayIcerik {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.detayInsideTxt {
+    width: 60%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+    color: var(--textclr);
+    z-index: 1;
+}
+
+.detayInsideTxt h2 {
+    font-size: clamp(25px, 2.604vw, 45px);
+    padding: 15px 0px;
+    font-family: var(--txt);
+    text-transform: uppercase;
+}
+
+.detayInsideTxt h3 {
+    font-size: clamp(20px, 2.604vw, 32px);
+    padding: 10px 0px;
+    font-family: var(--txt);
+    text-transform: uppercase;
+}
+
+.detayInsideTxt p {
+    font-size: clamp(14px, 2.604vw, 18px);
+}
+
+.detayInsideTxt ul {
+    padding: 30px 20px;
+    font-size: clamp(14px, 2.604vw, 18px);
+}
+
+.detayInsideTxt ul li {
+    padding: 15px 0px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 10px;
+}
+
+.detayInsideTxt ul li::before {
+    content: "●";
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    left: -20px;
+    top: 8.5px;
+}
+
+
+/* Text area Css End */
+
+/* =================================================================== */
+
+/* History area Css Start */
+
+@media (max-width: 1465px) {
+    .detayHeader {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1320px) {
+    .detayHeader {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .detayHeader {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1070px) {
+    .detayHeader {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .detayInsideTxt {
+        width: 90%;
+    }
+}
+
+@media (max-width: 960px) {
+    .detayHeader {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .detayMain {
+        flex-direction: column;
+    }
+    .detayImg, .detayTxt {
+        width: 100%;
+    }
+    .detayImg img {
+        height: 200px;
+    }
+
+    .detayInsideTxt {
+        width: 100%;
+    }
+    .detayTxt {
+        padding: 30px 20px;
+    }
+}

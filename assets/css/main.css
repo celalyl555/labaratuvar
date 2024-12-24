@@ -1,0 +1,952 @@
+/* Created By AkinaCss */
+/* Main area */
+
+.main {
+    width: 100%;
+    height: 100dvh;
+    min-height: 600px;
+    position: relative;
+    z-index: 7;
+}
+
+.main-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s;
+    opacity: 0.5;
+}
+.main-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;background: rgb(255,255,255,0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 80%, rgba(0,0,0,0.5) 100%);
+    z-index: 1;
+}
+
+.main-slide.active {
+    left: 0;
+    transform: translateX(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.slideBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 10;
+  transition: color 0.3s;
+}
+.slideBtn:hover {
+    color: var(--red);
+}
+
+#prev {
+  left: 20px;
+}
+
+#next {
+  right: 20px;
+}
+
+.color-overlay1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 0;
+    pointer-events: none;
+}
+  
+.clrO1 {
+    pointer-events: none;
+    flex: 1 1 20%;
+    width: 20%;
+    max-width: 20%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid #ffffff65;
+}
+
+.brNone {
+    border-right: none;
+}
+  
+.clr02 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    left: -100%;
+    animation: color-swipe1 2s ease forwards;
+    background: var(--textclr);
+}
+  
+@keyframes color-swipe1 {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 100%;
+    }
+}
+
+/* slider inside */
+
+.mainSlide-inside {
+    width: 100%;
+    z-index: 2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainSlide-txt {
+    width: 55%;
+    z-index: 2;
+    padding: 30px;
+    background-color: #33333354;
+}
+
+.gradient-button {
+    font-size: 18px;
+    font-family: var(--txt1);
+    color: var(--white);
+    padding: 8px 12px;
+    border: solid;
+    border-image: linear-gradient(90deg, transparent 0, transparent);
+    border-width: 2px;
+    border-image-slice: 1;
+    width: fit-content;
+}
+
+.gradient-button.clr1 {
+    border-image: linear-gradient(90deg, #21e8d8 0, #9146fe);
+    border-width: 2px;
+    border-image-slice: 1;
+}
+.gradient-button.clr2 {
+    border-image: linear-gradient(90deg, #12c2e9 0, #f64f59);
+    border-width: 2px;
+    border-image-slice: 1;
+}
+.gradient-button.clr3 {
+    border-image: linear-gradient(90deg, #FF0099 0, #99f2c8);
+    border-width: 2px;
+    border-image-slice: 1;
+}
+
+.mainSlide-inside p {
+    font-size: 48px;
+    font-weight: 800;
+    font-family: var(--txt1);
+    padding: 10px 0px;
+    color: var(--white);
+}
+
+.linka {
+    position: absolute;
+    bottom: -30px;
+    right: 30px;
+    padding: 20px 30px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.downbtn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    transition: bottom 0.3s;
+}
+.downbtn:hover {
+    bottom: 10px;
+}
+
+.downbtn svg {
+    width: 100%;
+    height: 100%;
+}
+
+.downbtn svg path {
+    fill: var(--white);
+    transition: fill 0.3s;
+}
+.downbtn:hover svg path {
+    fill: var(--red);
+    transition: fill 0.3s;
+}
+
+/* Main area Css End */
+
+/* =================================================================== */
+
+/* Mision area Css */
+
+section {
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    color: var(--black);
+}
+
+.missionArea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: relative;
+    top: -100px;
+}
+
+.missionImg {
+    width: 65%;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+}
+
+.missionImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.missionImg img:hover {
+    transform: scale(1.1);
+}
+
+.missionTxt {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    position: relative;
+    z-index: 4;
+}
+
+.missionTxt h2 {
+    position: relative;
+    left: -120px;
+    font-size: 48px;
+    font-weight: 100;
+    text-shadow: 1px 1px 2px #ffffff75;
+}
+
+.btnheader.trust {
+    font-size: 20px;
+    font-family: var(--txt);
+    font-weight: 800;
+}
+
+.borderscreen {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.borderscreen div {
+    flex: 1 1 20%;
+    width: 20%;
+    max-width: 20%;
+    border-right: 1px solid #eaeaea;
+    z-index: 1;
+}
+
+/* Mision area Css End */
+
+/* =================================================================== */
+
+/* History area Css Start */
+
+.pb-50 {
+    padding-bottom: 100px;
+}
+
+.historyArea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: relative;
+}
+
+.historyImg {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    top: 100px;
+}
+
+.historyImgImg {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.historyImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.historyImg img:hover {
+    transform: scale(1.1);
+}
+
+.historyTxt {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: var(--textclr);
+}
+
+.historyTxtCol {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 30px;
+    width: 50%;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.historyTxtCol h2 {
+    position: relative;
+    left: -120px;
+    font-size: 48px;
+    font-weight: 100;
+    color: var(--white);
+    z-index: 6;
+}
+
+.historyTxtImg {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+    z-index: 5;
+}
+
+.historyTxtImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.historyTxtImg img:hover {
+    transform: scale(1.1);
+}
+
+
+.borderscreen1 {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.borderscreen1 div {
+    flex: 1 1 20%;
+    width: 20%;
+    max-width: 20%;
+    border-right: 1px solid #eaeaea;
+    z-index: 0;
+}
+
+.nonemain {
+    border-right: none !important;
+}
+
+/* History area Css End */
+
+/* =================================================================== */
+
+/* Sertifika area Css End */
+
+.sertifika {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sertifikabg {
+    width: 100%;
+    height: 200px;
+    background-color: var(--textclr);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+    z-index: 1;
+}
+
+.sertifikabg h2 {
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 200;
+    font-family: var(--txt);
+}
+
+.sertifikaSlider1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: -70px;
+}
+
+.owl-stage {
+    height: 100%;
+}
+
+.owl-sertifika {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.owl-sertifika .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+
+.owl-sertifika .item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.owl-header {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 10px;
+}
+
+.owl-txt {
+    font-size: 25px;
+    font-family: var(--txt);
+    font-weight: 300;
+    padding: 0px 10px;
+}
+
+.owl-carousel .owl-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item.center-item {
+    transform: scale(1.2); /* Ortadaki öğe büyütülür */
+    z-index: 10; /* Ortadaki öğeyi en üstte tutmak için */
+}
+
+.owl-carousel .owl-item.left-item,
+.owl-carousel .owl-item.right-item {
+    transform: scale(0.8); /* Diğer öğeleri küçültür */
+    opacity: 0.6; /* Diğer öğeleri daha şeffaf yapar */
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    font-size: 70px;
+    color: var(--textclr);
+    z-index: -1;
+}
+
+.owl-prev {
+    position: relative;
+    left: -50px;
+}
+
+.owl-next {
+    position: relative;
+    left: 50px;
+}
+
+.borderscreen11 {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 70px);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.borderscreen11 div {
+    flex: 1 1 20%;
+    width: 20%;
+    max-width: 20%;
+    border-right: 1px solid #eaeaea;
+    z-index: 0;
+}
+
+/* Sertifika area Css End */
+
+/* =================================================================== */
+
+/* haber area Css Start */
+
+.newheight {
+    height: 100%;
+}
+
+.haber {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    background-color: var(--white);
+    padding-bottom: 70px;
+}
+
+.haberHeader {
+    flex: 1 1 20%;
+    width: 20%;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.haberHeader.headerp {
+    padding: 0px 30px;
+}
+
+.haberHeader h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.haberHeader h3 {
+    padding: 0px 25px;
+    border-left: 5px solid var(--red);
+}
+
+.newsA {
+    width: 100%;
+    padding: 0px 30px;
+    position: relative;
+}
+
+.newsA .dateNews {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btnNews {
+    overflow: hidden;
+    position: relative;
+}
+
+.btnNews span {
+    position: relative;
+    left: -100%;
+    color: var(--red);
+    transition: left 0.3s;
+}
+
+.btnNews svg {
+    position: relative;
+    left: calc(-100% + 20px);
+    color: var(--red);
+    transition: left 0.3s;
+}
+
+.newsA:hover .btnNews span {
+    left: 0%;
+}
+
+.newsA:hover .btnNews svg {
+    left: 0%;
+}
+
+.newsLeftRed {
+    position: absolute;
+    left: 0;
+    background-color: var(--red);
+    width: 5px;
+    height: 0%;
+    transition: height 0.3s;
+}
+
+.newsA:hover .newsLeftRed {
+    height: 100%;
+}
+
+/* haber area Css End */
+
+/* =================================================================== */
+
+/* Sertifika area Css End */
+
+
+/* Responsive Css */
+
+@media (max-width: 1500px) {
+    .historyImg {
+        width: 40%;
+        height: 500px;
+    }
+    .historyTxt {
+        width: 60%;
+        height: 500px;
+    }
+    .historyTxtImg {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .missionTxt h2, .historyTxtCol h2 {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1300px) {
+    .missionTxt h2, .historyTxtCol h2 {
+        font-size: 35px;
+    }
+
+    .historyImg {
+        width: 40%;
+        height: 400px;
+    }
+    .historyTxt {
+        width: 60%;
+        height: 400px;
+    }
+    .historyTxtImg {
+        height: 400px;
+    }
+
+    .owl-sertifika {
+        width: 65%;
+    }
+
+}
+@media (max-width: 1090px) {
+    .missionTxt {
+        width: 40%;
+    }
+    .missionImg {
+        width: 60%;
+        height: 400px;
+    }
+
+    .sertifikabg h2 {
+        font-size: 35px;
+    }
+
+    .haberHeader h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 960px) {
+    .historyImg {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        right: 5%;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+    .historyImg img {
+        width: 100%;
+    }
+    .historyTxt {
+        width: 100%;
+        height: 400px;
+    }
+
+    .historyTxtCol {
+        width: 75%;
+    }
+    .historyTxtImg {
+        width: 25%;
+        height: 400px;
+    }
+    .historyTxtCol h2 {
+        left: 0;
+    }
+
+    .historyTxtCol a {
+        z-index: 5;
+    }
+
+    .owl-sertifika {
+        width: 80%;
+    }
+    
+    .sertifikabg h2 {
+        font-size: 30px;
+    }
+
+    .haberHeader h2 {
+        font-size: 30px;
+    }
+    .haberHeader h3 {
+        font-size: 16px;
+    }
+    .newsA {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 910px) {
+    .missionTxt {
+        width: 50%;
+    }
+    .missionImg {
+        width: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    .haber {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .haberHeader {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        gap: 15px;
+    }
+    .newheight {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .missionArea {
+        flex-direction: column;
+    }
+    .missionTxt {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .missionTxt h2 {
+        left: 0;
+    }
+    .missionImg {
+        width: 100%;
+        height: 350px;
+    }
+
+    .historyArea {
+        flex-direction: column;
+    }
+    .historyImg {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        right: 0;
+    }
+    .historyImgImg {
+        width: 100%;
+    }
+    .borderscreen1 {
+        display: none;
+    }
+
+    .historyTxt {
+        flex-direction: column;
+        height: 600px;
+    }
+    .historyTxtCol {
+        width: 100%;
+    }
+    .historyTxtImg {
+        width: 100%;
+        z-index: 0;
+        height: 300px;
+    }
+
+    .owl-carousel .owl-item.center-item {
+        transform: scale(1);
+        z-index: 10;
+    }
+    
+    .owl-carousel .owl-item.left-item,
+    .owl-carousel .owl-item.right-item {
+        transform: scale(1);
+    }
+
+    .sertifikabg h2 {
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .mainSlide-txt {
+        width: 70%;
+    }
+    .mainSlide-inside p {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 650px) {
+    .mainSlide-txt {
+        width: 90%;
+    }
+}
+
+@media (max-width: 530px) {
+    .mainSlide-inside p {
+        font-size: 24px;
+    }
+    .linka {
+        position: absolute;
+        bottom: -13px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: var(--red);
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 500px) {
+    #next {
+        right: calc(50% - 70px);
+        bottom: 25px;
+    }
+    #prev {
+        left: calc(50% - 70px);
+        bottom: 25px;
+    }
+    .slideBtn {
+        top: auto;
+        transform: translateY(0%);
+    }
+
+    .clrO1 {
+        border-right: none;
+    }
+    
+    .owl-prev {
+        position: relative;
+        left: -30px;
+    }
+    
+    .owl-next {
+        position: relative;
+        left: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sertifikabg h2 {
+        font-size: 25px;
+    }
+}

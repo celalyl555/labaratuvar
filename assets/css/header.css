@@ -556,7 +556,7 @@ header {
 .menu-item a {
     display: flex;
     width: fit-content;
-    max-width: calc(100% - 30px);
+    max-width: calc(100% - 35px);
 }
 .menu-item a:hover {
     color: var(--red);
@@ -609,7 +609,7 @@ header {
 }
 
 .submenu li {
-    padding: 2px 5px !important;
+    padding: 5px 5px !important;
     margin-left: 20px;
     font-size: 15px;
     font-weight: 300;
@@ -621,9 +621,53 @@ header {
     border-left: 5px solid var(--red);
 }
 
-.submenu li a {
-    width: 100%;
+.has-submenu-child {
+    position: relative;
 }
+
+.has-submenu-child svg {
+    position: absolute;
+    top: 0px;
+    width: 30px;
+    height: 24px;
+    right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.has-submenu-child svg path {
+    stroke: var(--textclr1);
+}
+
+.has-submenu-child svg {
+    transform: rotate(0deg) !important;
+}
+
+.has-submenu-child.open svg {
+    transform: rotate(180deg) !important;
+}
+
+.submenu-child {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+
+.submenu-child li {
+    padding: 7px 0px !important;
+    margin-left: 10px;
+    font-size: 14px !important;
+    color: var(--textclr1);
+    transition: color 0.3s ease;
+}
+
+.submenu-child li:hover {
+    color: var(--red);
+}
+
+/* .submenu li a {
+    width: 100%;
+} */
 .submenu li:hover a {
     color: var(--red);
 }

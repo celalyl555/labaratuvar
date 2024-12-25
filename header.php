@@ -54,8 +54,26 @@
                                             <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                         <ul class="submenu">
-                                            <li><a href="">Agri-comAgri-comAgri-comAgri -comAgri-comAgri-comAgri-com</a></li>
-                                            <li><a href="">Logistics Solutions</a></li>
+                                            <li class="has-submenu-child">
+                                                <a href="">Agri-com</a>
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <ul class="submenu-child">
+                                                    <li><a href="">Sub-Option 1</a></li>
+                                                    <li><a href="">Sub-Option 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-submenu-child">
+                                                <a href="">Agri-comAgri</a>
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <ul class="submenu-child">
+                                                    <li><a href="">Sub-Option 1</a></li>
+                                                    <li><a href="">Sub-Option 2</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-submenu">
@@ -277,9 +295,27 @@
                                 <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <ul class="submenu">
-                                <li><a href="">Agri-com</a></li>
-                                <li><a href="">Logistics Solutions</a></li>
-                            </ul>
+                                            <li class="has-submenu-child">
+                                                <a href=""><div class="borderhover"></div>Agri-com</a>
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <ul class="submenu-child">
+                                                    <li><a href="">Sub-Option 1</a></li>
+                                                    <li><a href="">Sub-Option 2</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-submenu-child">
+                                                <a href="">Agri-comAgri</a>
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <ul class="submenu-child">
+                                                    <li><a href="">Sub-Option 1</a></li>
+                                                    <li><a href="">Sub-Option 2</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                         </li>
                         <li class="menu-item has-submenu">
                             <a href=""><div class="borderhover"></div>AUTOMOTIVE & TRANSPORT</a>

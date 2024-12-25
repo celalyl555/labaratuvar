@@ -16,20 +16,20 @@
 /* ============================================================================== */
 
 :root {
-    --bg-color: #32373B;
+    --bg-color: #333333;
 
     --btn-clr: #89909F;
 
-    --orange: #F17300;
-    --orangeLight: #F19A3E;
+    --orange: #e71a41;
+    --orangeLight: #e71a41;
 
-    --blueLight: #2f93ff;
-    --blueDark: #155ba7;
-    --blue: #1d79d9;
+    --blueLight: #ff1842;
+    --blueDark: #e71a41;
+    --blue: #ff1842;
 
-    --greenLight: #c1ff44;
-    --greenDark: #7ca529;
-    --green: #99cc33;
+    --greenLight: #0aa317;
+    --greenDark: #0aa317;
+    --green: #33cc40;
 
     --white: #FFFFFF;
     --black: #000000;
@@ -100,6 +100,7 @@ a {
 
 .sidebar {
     background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     color: var(--white);
     width: 250px;
     padding: 20px;
@@ -154,7 +155,7 @@ a {
     transition: 0.3s;
     margin-left: 250px;
     padding: 20px;
-    background-color: var(--gray);
+    background-color: #3f3f3f;
     width: calc(100% - 250px);
     box-sizing: border-box;
     overflow-y: auto;
@@ -162,6 +163,7 @@ a {
 
 .cententHeader {
     background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     color: var(--orangeLight);
     padding: 10px 20px;
     border-radius: 5px;
@@ -206,9 +208,9 @@ a {
 
 .content-area {
     padding: 30px 20px;
-    background-color: var(--white);
+    background-color: #333;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     width: 100%;
     height: calc(100% - 80px);
     overflow: auto;
@@ -258,10 +260,17 @@ a {
     justify-content: flex-end;
 }
 
-.fBox h3 {
-    color: var(--bg-color);
+.fBox h2 {
+    color: var(--white);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.fBox h3 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
     line-height: 1;
 }
 
@@ -271,7 +280,7 @@ a {
     border: none;
     height: 1px;
     background: var(--greenDark);
-    background: linear-gradient(100deg, var(--whiteLight) 0%, var(--btn-clr) 50%, var(--whiteLight) 100%);
+    background: linear-gradient(100deg, transparent 0%, #535353 50%, transparent 100%);
 }
 
 .hr1, .hrGray {
@@ -280,13 +289,13 @@ a {
     border: none;
     height: 1px;
     background: var(--greenDark);
-    background: linear-gradient(100deg, var(--white) 0%, var(--whiteLight) 25%, var(--whiteLight) 75%, var(--white) 100%);
+    background: linear-gradient(100deg, transparent 0%, #535353 50%, transparent 100%);
 }
 
 .fBox h3 span {
-    color: var(--btn-clr);
+    color: #bebebe;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .fBox img {

@@ -313,11 +313,12 @@ function closeDropdown(elementId) {
         }
     };
     </script>
-    <script>
-    function setupDropdown(dropdownInputId, dropdownContainerId, filterInputId) {
+<script>
+    function setupDropdown(dropdownInputId, dropdownContainerId, filterInputId, listContainerId) {
         const dropdownInput = document.getElementById(dropdownInputId);
         const dropdownContainer = document.getElementById(dropdownContainerId);
         const filterInput = document.getElementById(filterInputId);
+        const listContainer = document.getElementById(listContainerId);
 
         // Dropdown'u açıp kapatmak için
         dropdownInput.onclick = function(event) {
@@ -325,18 +326,19 @@ function closeDropdown(elementId) {
             dropdownContainer.classList.toggle("show1");
         };
 
-        // Seçilen değeri input'a yazmak için
-        dropdownContainer.querySelectorAll('a').forEach(function(item) {
-            item.onclick = function() {
-                dropdownInput.value = item.textContent;
+        // Dinamik oluşturulan a etiketlerine tıklama olayı ekle
+        listContainer.addEventListener('click', function(event) {
+            if (event.target.tagName === 'A') { // Sadece <a> etiketlerini kontrol et
+                event.preventDefault(); // Varsayılan davranışı durdur
+                dropdownInput.value = event.target.textContent; // Seçilen değeri input'a yaz
                 dropdownContainer.classList.remove("show1"); // Dropdown'ı kapat
-            };
+            }
         });
 
         // Filtreleme fonksiyonu
         filterInput.onkeyup = function() {
             const filter = filterInput.value.toUpperCase();
-            const aTags = dropdownContainer.getElementsByTagName("a");
+            const aTags = listContainer.getElementsByTagName("a");
 
             for (let i = 0; i < aTags.length; i++) {
                 const txtValue = aTags[i].textContent || aTags[i].innerText;
@@ -356,10 +358,11 @@ function closeDropdown(elementId) {
         });
     }
 
-    setupDropdown('myInput1', 'myDropdown1', 'myFilter1');
-    setupDropdown('myInput2', 'myDropdown2', 'myFilter2');
-    setupDropdown('myInput3', 'myDropdown3', 'myFilter3');
-    </script>
+    setupDropdown('myInput1', 'myDropdown1', 'myFilter1', 'anaKategoriListesi');
+    setupDropdown('myInput2', 'myDropdown2', 'myFilter2', 'altKategoriListesi');
+    setupDropdown('myInput3', 'myDropdown3', 'myFilter3', 'detayKategoriListesi');
+</script>
+
 
     <script>
     // Select the button and sidebar elements

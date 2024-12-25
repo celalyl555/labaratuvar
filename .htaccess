@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# .php uzantısını kaldır (önce bu kural çalışır)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/.]+)$ $1.php [L]
+
+# index ve hakkimizda sayfalarını hariç tut, diğerlerini detay.php'ye yönlendir
+RewriteCond %{REQUEST_URI} !^/index$
+RewriteCond %{REQUEST_URI} !^/hakkimizda$
+RewriteCond %{REQUEST_URI} !^/test$
+RewriteCond %{REQUEST_URI} !^/contact$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ detay.php?seo=$1 [L,QSA]

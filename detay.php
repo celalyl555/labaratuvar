@@ -1,8 +1,18 @@
 <?php 
 
 include('header.php'); 
-
-
+$seo_url = $_GET['seo'];
+$seo_url = str_replace('.php', '', $seo_url); // .php uzantısını kaldır
+ 
+$query = $conn->prepare("SELECT * FROM kategoriler WHERE seo_url = :seo_url");
+$query->bindParam(':seo_url', $seo_url, PDO::PARAM_STR);
+$query->execute();
+$kategoriler = $query->fetch(PDO::FETCH_ASSOC);
+if (!$kategoriler) {
+    // SEO URL veritabanında yoksa 404 sayfasına yönlendir
+    header("Location: 404");
+   
+} 
 ?>
 
     <!-- ======================================================== -->

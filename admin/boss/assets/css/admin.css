@@ -549,7 +549,7 @@ textarea:hover {
 .logo-container label {
     font-weight: bold;
     margin-bottom: 10px;
-    color: var(--black);
+    color: var(--white);
     font-size: 23px;
     width: 50%;
     font-size: 18px;

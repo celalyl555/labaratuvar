@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="icon" sizes="192x192" href="../assets/img/logo/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="boss/assets/css/login.css">
     <title>Giriş Yap</title>
 </head>
 
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="post" class="form-control mt-5 p-4"
             style="height:auto; width:380px; box-shadow: rgba(60, 64, 67, 0.3) 
             0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-            <div class="row">
+            <div class="row loginimg">
                 <img src="../assets/img/logo/logo.png" alt="">
                 <h5 class="text-center p-4" 
           style="font-weight: 700;">Giriş Yapınız</h5>

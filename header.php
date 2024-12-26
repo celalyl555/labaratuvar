@@ -21,6 +21,7 @@ include('db.php');
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/detay.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 </head>
 <body>

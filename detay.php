@@ -8,11 +8,56 @@ $query = $conn->prepare("SELECT * FROM kategoriler WHERE seo_url = :seo_url");
 $query->bindParam(':seo_url', $seo_url, PDO::PARAM_STR);
 $query->execute();
 $kategoriler = $query->fetch(PDO::FETCH_ASSOC);
+
+
 if (!$kategoriler) {
     // SEO URL veritabanında yoksa 404 sayfasına yönlendir
     header("Location: 404");
    
 } 
+
+
+// Başlık hiyerarşisi kontrolü için başlangıç dizisi
+$breadcrumbs = [
+    ['name' => 'Eurolab', 'url' => '/labaratuvar']
+];
+
+// Eğer başlık bulunduysa, başlık seviyesine göre breadcrumb oluştur
+if ($kategoriler) {
+    // Ana başlık
+    if ($kategoriler['parent_id'] === null) {
+        $breadcrumbs[] = ['name' => $kategoriler['kategori_adi'], 'url' => "".$kategoriler['seo_url']];
+    } else {
+        // 2. seviye başlık için ana başlığı çek
+        $query = $conn->prepare("SELECT * FROM kategoriler WHERE id = :parent_id");
+        $query->bindParam(':parent_id', $kategoriler['parent_id'], PDO::PARAM_INT);
+        $query->execute();
+        $anaBaslik = $query->fetch(PDO::FETCH_ASSOC);
+
+        if ($anaBaslik) {
+            // 3. seviye başlık kontrolü
+            if ($anaBaslik['parent_id'] !== null) {
+                // 3. seviyede, ana başlığın üst başlığını (yani asıl ana başlığı) bul
+                $query = $conn->prepare("SELECT * FROM kategoriler WHERE id = :grandparent_id");
+                $query->bindParam(':grandparent_id', $anaBaslik['parent_id'], PDO::PARAM_INT);
+                $query->execute();
+                $ustBaslik = $query->fetch(PDO::FETCH_ASSOC);
+
+                if ($ustBaslik) {
+                    // Hiyerarşi sırasına göre diziyi doldur
+                    $breadcrumbs[] = ['name' => $ustBaslik['kategori_adi'], 'url' => "".$ustBaslik['seo_url']];
+                }
+            }
+            // 2. seviye başlık ve 3. başlık ekleniyor
+            $breadcrumbs[] = ['name' => $anaBaslik['kategori_adi'], 'url' => "".$anaBaslik['seo_url']];
+            $breadcrumbs[] = ['name' => $kategoriler['kategori_adi'], 'url' => "".$kategoriler['seo_url']];
+        }
+    }
+}
+
+
+
+
 ?>
 
     <!-- ======================================================== -->
@@ -30,20 +75,26 @@ if (!$kategoriler) {
     <main class="detayMain">
 
         <div class="detayImg">
-            <img src="assets/img/main/eurolab.avif" alt="">
+            <img src="images/<?php echo $kategoriler['resim_yol']; ?>" alt="<?php echo $kategoriler['kategori_adi']; ?>">
         </div>
 
         <div class="detayTxt">
 
-            <div class="detayMap">
-                <a href="">Home</a>
-                <p>-</p>
-                <a href="">Markets & Services</a>
-                <p>-</p>
-                <a href="">Buildings & Infrastructure</a>
-            </div>
+        <div class="detayMap">
+                    <?php 
+                    $count = count($breadcrumbs);
+                    foreach ($breadcrumbs as $index => $breadcrumb): 
+                    ?>
+                    <a href="<?= $breadcrumb['url'] ?>">
+                        <?= $breadcrumb['name'] ?>
+                        <?php if ($index < $count - 1): ?>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <?php endif; ?>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
             
-            <h2 class="detayHeader">Data Centers & Telecommunications</h2>
+            <h1 class="detayHeader"><?php echo $kategoriler['kategori_adi']; ?></h1>
 
         </div>
     </main>
@@ -65,36 +116,8 @@ if (!$kategoriler) {
         </div>
 
         <div class="detayInsideTxt">
-
-            <p><strong>Today’s society is driven by data, creating demand for robust data centers and telecommunications infrastructure.</strong></p>
-
-            <h2>Comprehensive services for the telecommunications</h2>
-
-            <h3>Your challenges</h3>
-
-            <p>As investors and developers, you aim to deliver telecoms and digital infrastructure that is both profitable and in line with end-user demands. You require the help of organizations with fully integrated TIC and engineering services that can support them across the entire value chain. This includes everything from design and construction, to operations and maintenance, to decommissioning and closure.</p>
-
-            <h3>How we support you</h3>
-
-            <p>Our experience includes a wide range of cloud computing, colocation, wholesale, and enterprise data center projects. The requirements for each of these types of data centers are as unique as the business that each supports. We put our exceptionally skilled staff to work delivering innovative technology solutions to all of our clients.</p>
-
-            <p>Bureau Veritas supports you at every step of the way during your telecoms and data center projects. We help you build sustainably and remain compliant with all regulations from start-up through handover.</p>
-
-            <p>Our subsidiary, Primary Integration Solutions, is a leader in data center building, commissioning and operational risk management services.</p>
-
-            <ul>
-                <li><strong>Data Center Commissioning:</strong> Our comprehensive processes for qualifying the electrical, mechanical, plumbing and control systems that support mission critical environments ensure that the critical load is always protected.</li>
-                <li><strong>Data Center QA/QC:</strong> Our QA/QC services are designed to ensure compliance with company and industry standards, as well as client specifications and project plans.</li>
-                <li><strong>Data Center Operations Consulting Services:</strong> We provide the technical expertise to ensure that your systems operate correctly, standards are replicable and sustainable, equipment is optimized for reliability and performance, and personnel are properly trained.</li>
-                <li><strong>Telecoms infrastructure:</strong> We provide supervision, commissioning and testing of new communication networks, pipelines, fiber-optic cables and towers. Our experts can conduct a full inventory assessment and asset inspection to develop an Asset Management Plan.</li>
-            </ul>
-
-            <h2>Remote inspections and data collection</h2>
-
-            <p>Providing accurate inspections is a key pillar of Bureau Veritas’ expertise. We use drones and sensors for remote inspection and data collection, carry out surveys using on site cameras, inspect progress on construction, and supervise construction site safety. Our remote inspections improve safety and reduce costs.</p>
-
-            <p>With our Building Information Modeling tool, BIM, Bureau Veritas can use 3D technology to provide digital modeling for the design and construction of your building, helping manage data and simulate operations (SIMOPS).</p>
-
+        <?php echo $kategoriler['veri']; ?>
+           
         </div>
 
     </section>

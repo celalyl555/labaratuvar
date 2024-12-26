@@ -8,7 +8,7 @@ RewriteRule ^([^/.]+)$ $1.php [L]
 # index ve hakkimizda sayfalarını hariç tut, diğerlerini detay.php'ye yönlendir
 RewriteCond %{REQUEST_URI} !^/index$
 RewriteCond %{REQUEST_URI} !^/hakkimizda$
-RewriteCond %{REQUEST_URI} !^/test$
+RewriteCond %{REQUEST_URI} !^/aktar$
 RewriteCond %{REQUEST_URI} !^/contact$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

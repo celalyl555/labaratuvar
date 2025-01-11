@@ -116,8 +116,13 @@ if ($kategoriler) {
         </div>
 
         <div class="detayInsideTxt">
-        <?php echo $kategoriler['veri']; ?>
-           
+            <?php 
+            if (!empty($kategoriler['veri'])) {
+                echo htmlspecialchars($kategoriler['veri'], ENT_QUOTES, 'UTF-8');
+            } else {
+                echo 'İçerik bulunamadı.';
+            }
+            ?>
         </div>
 
     </section>

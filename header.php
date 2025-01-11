@@ -11,7 +11,7 @@ include('db.php');
 
     <link rel="icon" sizes="192x192" href="assets/img/logo/favicon.ico">
     <title>EUROLAB | Kalite</title>
-    
+
     <!-- Library -->
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
@@ -66,7 +66,7 @@ include('db.php');
                                                     <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                                 <ul class="submenu-child">
-                                                    <li><a href="">Sub-Option 1</a></li>
+                                                    <li><a href="">Sub-Option 1213123</a></li>
                                                     <li><a href="">Sub-Option 2</a></li>
                                                 </ul>
                                             </li>
@@ -301,6 +301,16 @@ include('db.php');
                                 <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <ul class="submenu">
+                                            <li class="has-submenu-child">
+                                                <a href=""><div class="borderhover"></div>Agri-com</a>
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <ul class="submenu-child">
+                                                    <li><a href="">Sub-Option 1</a></li>
+                                                    <li><a href="">Sub-Option 2</a></li>
+                                                </ul>
+                                            </li>
                                             <li class="has-submenu-child">
                                                 <a href=""><div class="borderhover"></div>Agri-com</a>
                                                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

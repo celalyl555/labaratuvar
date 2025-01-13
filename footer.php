@@ -7,18 +7,18 @@
     </div>
     <div class="footer-img-txt">
         <p>JOIN US</p>
-        <h2>LEAVE YOUR MARK WITH US</h2>
-        <a href="" class="linka2">OUR JOB OFFERS</a>
+        <h2>Want to make a difference?</h2>
+        <a href="" class="linka2">Explore careers</a>
     </div>
 </div>
 
 <div class="footer-txt">
     <div class="footer-txt-inside">
         <div class="footer-menu">
-            <a href="">Our websites</a>
+            <a href="">ABOUT US</a>
             <a href="">Contact</a>
             <a href="">Careers</a>
-            <a href="">Investors</a>
+            <a href="">Responsibility</a>
             <a href="">Site map</a>
             <a href="">News</a>
         </div>

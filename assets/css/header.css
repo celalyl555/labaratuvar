@@ -458,6 +458,9 @@ header {
     flex-direction: column;
     gap: 20px;
 }
+.content-text.w-50 {
+    width: 40%;
+}
 
 .content-text h2 {
     font-size: 35px;
@@ -505,6 +508,10 @@ header {
 
 .menu-container {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
 }
 
 .menu {
@@ -512,13 +519,17 @@ header {
     padding: 0;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     gap: 10px;
     max-height: 350px;
     overflow-y: auto;
     border-left: 1px solid var(--border);
     padding-left: 30px;
+}
+
+.menu.two {
+    width: 50%;
 }
 
 /* width */
@@ -542,9 +553,9 @@ header {
 }
 
 .menu-item {
-    flex: 1 1 50%;
-    width: 50%;
-    max-width: calc(50% - 10px);
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
     font-size: 15px;
     font-weight: bold;
     color: var(--textclr);
@@ -613,6 +624,7 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 10px;
 }
 
 .submenu li {
@@ -637,7 +649,7 @@ header {
 
 .has-submenu-child svg {
     position: absolute;
-    top: 0px;
+    top: 5px;
     width: 30px;
     height: 24px;
     right: 15px;
@@ -796,6 +808,9 @@ header {
     width: 40%;
     text-align: left;
 }
+.content-text.subinside.w-50 {
+    width: 50%;
+}
 
 .content-map.subinside {
     padding-top: 20px;
@@ -887,7 +902,8 @@ header {
     .a-submenu {
         flex-direction: column;
     }
-    .content-text.subinside {
+    .content-text.subinside,
+    .content-text.subinside.w-50 {
         width: 100%;
     }
     .content-map.subinside {

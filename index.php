@@ -148,7 +148,7 @@ include('header.php');
         <div class="sertifika">
 
             <div class="sertifikabg">
-                <h2>FOSTERING TRUST, IMPROVING PERFORMANCE</h2>
+                <h2>DRIVING INNOVATION, DELIVERING EXCELLENCE</h2>
             </div>
 
             <div class="sertifikaSlider1">

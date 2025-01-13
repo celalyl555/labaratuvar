@@ -40,10 +40,31 @@
     display: flex;
     overflow: hidden;
     z-index: 1;
+    position: relative;
 }
+
+.detayImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006e;
+    z-index: 2;
+}
+
 .detayImg img {
     width: 100%;
     height: 500px;
+    object-fit: cover;
+}
+
+.detayimgsus {
+    width: 100%;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -168,6 +189,48 @@
 
 /* =================================================================== */
 
+/* yan yana area Css Start */
+
+.sidebyside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sideBox {
+    flex: 1 1 50%;
+    width: 50%;
+    max-width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.sideBox img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sideBox h4 {
+    font-size: clamp(18px, 1.042vw, 20px);
+}
+
+.sideBox p {
+    font-size: clamp(14px, 0.833vw, 16px);
+}
+
+
+/* yan yana area Css End */
+
+/* =================================================================== */
+
 /* History area Css Start */
 
 @media (max-width: 1465px) {
@@ -222,5 +285,13 @@
     }
     .detayTxt {
         padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sideBox {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
     }
 }

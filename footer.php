@@ -3,37 +3,29 @@
 
 <div class="footer-img">
     <div class="footer-imgBox">
-        <img src="assets/img/main/eurolab.avif" alt="">
+        <img src="assets/img/main/eurolab.avif" alt="JOIN US">
     </div>
     <div class="footer-img-txt">
         <p>JOIN US</p>
         <h2>Want to make a difference?</h2>
-        <a href="" class="linka2">Explore careers</a>
+        <a href="careers" class="linka2">Explore careers</a>
     </div>
 </div>
 
 <div class="footer-txt">
     <div class="footer-txt-inside">
         <div class="footer-menu">
-            <a href="">ABOUT US</a>
-            <a href="">Contact</a>
-            <a href="">Careers</a>
-            <a href="">Responsibility</a>
-            <a href="">Site map</a>
+            <a href="about-us">About Us</a>
+            <a href="contact">Contact</a>
+            <a href="careers">Careers</a>
+            <a href="responsibility">Responsibility</a>
+            <a href="site-map">Site map</a>
             <a href="">News</a>
         </div>
         <div class="footer-bottom">
-            <p>© 2017 EUROLAB</p>
-            <p>|</p>
-            <a href="">Legal notice</a>
-            <p>|</p>
-            <a href="">Terms of use</a>
-            <p>|</p>
-            <a href="">Cookies policy</a>
-            <p>|</p>
-            <a href="">Personal data protection policy</a>
-            <p>|</p>
-            <a href="">Accessibility statement</a>
+            <p>Copyright © 2018 EUROLAB Laboratory Inc. All Rights Reserved.</p>
+            <p>It is a nationally and internationally accredited independent, impartial private certification organization, and its conformity assessment in certification standards is recognized across all platforms.</p>
+            <p>EUROLAB®, as a member of IAF, holds the most comprehensive accreditation in Turkey with UAF American Accreditation.</p>
         </div>
     </div>
 </div>

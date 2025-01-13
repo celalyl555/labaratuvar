@@ -17,7 +17,7 @@ include('header.php');
     <main class="detayMain">
 
         <div class="detayImg">
-            <img src="assets/img/sustainability/contact.jpg" alt="CONTACT">
+            <img src="assets/img/sustainability/career.jpg" alt="CAREERS">
         </div>
 
         <div class="detayTxt">
@@ -25,10 +25,10 @@ include('header.php');
             <div class="detayMap">
                 <a href="/labaratuvar">EUROLAB</a>
                 <p>-</p>
-                <a href="sustainability">CONTACT</a>
+                <a href="sustainability">CAREERS</a>
             </div>
             
-            <h1 class="detayHeader">CONTACT US</h1>
+            <h1 class="detayHeader">CAREERS</h1>
 
         </div>
     </main>
@@ -51,73 +51,86 @@ include('header.php');
 
         <div class="detayInsideTxt">
 
-            <h2>CONTACT US</h2>
+            <h2>CAREERS</h2>
             
-            <form id="custom-form">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="surname">Surname*</label>
-                    <input type="text" id="surname" name="surname" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="company">Company Name*</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone*</label>
-                    <input type="text" id="phone" name="phone" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="address">Address*</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-
-                <div class="form-group custom-select-container">
-                    <label for="topic">Subject*</label>
-                    <div class="custom-select" id="custom-topic">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Konu 1">Konu 1</div>
-                            <div data-value="Konu 2">Konu 2</div>
-                            <div data-value="Konu 3">Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic" name="topic">
-                </div>
-
-                <div class="form-group custom-select-container">
-                    <label for="topic-2">Subject-2*</label>
-                    <div class="custom-select" id="custom-topic-2">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Alt Konu 1">Alt Konu 1</div>
-                            <div data-value="Alt Konu 2">Alt Konu 2</div>
-                            <div data-value="Alt Konu 3">Alt Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic-2" name="topic-2">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Your Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button class="linka2" type="submit">SUBMIT</button>
-            </form>
+            <p>Join our team, make our world better, safer and more sustainable.</p>
             
+            <p>Eurolab is committed to making a positive impact worldwide, with a clear mission to enhance quality, safety, and sustainability in every aspect of life.</p>
+
+            <p>Joining Eurolab means becoming part of a global team of dedicated professionals who deliver exceptional customer service through a network of cutting-edge facilities.</p>
+
+            <p>A career at Eurolab allows you to leverage your skills and expertise to ensure the quality, safety, and sustainability of products and services that touch the lives of millions around the globe. Discover endless opportunities to grow and develop in a dynamic environment that spans every industry sector.</p>
+
+
+            <h3>Our People and Culture</h3>
+
+            <p>We place great importance on our people, fostering a culture that celebrates diversity, inclusion, and equality. Our success is built on the strong foundation of trust shared by our teams across all our locations.</p>
+
+            <p>Eurolab is powered by individuals with outstanding technical expertise, passion, and drive. As a company, we are committed to creating a safe and supportive environment where everyone feels valued and has access to enriching personal and professional growth opportunities. We are dedicated to upholding and respecting the rights of our employees in all our operations and business partnerships.</p>
+
+
+            <h3>What we do for our customers</h3>
+
+            <p>We offer a comprehensive suite of Assurance, Testing, Inspection, and Certification services designed to ensure the highest standards of quality, safety, and reliability across your products, services, and operations, providing you with total confidence in your business.</p>
+            
+            <div class="sidebyside">
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/assur.jpg" alt="Assurance">
+                    <h4>Assurance</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/test.jpg" alt="Testing">
+                    <h4>Testing</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/inspec.jpeg" alt="Inspection">
+                    <h4>Inspection</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/certification.webp" alt="Certification">
+                    <h4>Certification</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/people.jpg" alt=">30,000 people">
+                    <h4>>30,000 people</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/countries.webp" alt=">100 countries">
+                    <h4>>100 countries</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/locations-1.jpg" alt=">1,000 locations">
+                    <h4>>1,000 locations</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/crm-data.webp" alt="24/7 End-to-end services">
+                    <h4>24/7 End-to-end services</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/industry.jpg" alt="Every industry sector">
+                    <h4>Every industry sector</h4>
+                </div>
+
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/science-based.jpg" alt="Science-based solutions">
+                    <h4>Science-based solutions</h4>
+                </div>
+                
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/quality.jpg" alt="Total Quality. Assured.">
+                    <h4>Total Quality. Assured.</h4>
+                </div>
+
+            </div>
+
         </div>
 
     </section>
@@ -260,45 +273,3 @@ include('footer.php');
 
 
 ?>
-
-    <script>
-        document.querySelectorAll('.custom-select').forEach(select => {
-            const selected = select.querySelector('.custom-selected');
-            const options = select.querySelector('.custom-options');
-                
-            // Tıklandığında select classını ekle
-            selected.addEventListener('click', () => {
-                options.style.display = options.style.display === 'block' ? 'none' : 'block';
-                selected.classList.add('select');
-            });
-        
-            // Bir seçenek seçildiğinde select classını koru
-            options.addEventListener('click', (e) => {
-                const value = e.target.getAttribute('data-value');
-                if (value) {
-                    selected.textContent = e.target.textContent;
-                    selected.classList.add('select'); // Seçim sonrası select classını koru
-                    options.style.display = 'none';
-                
-                    const input = select.nextElementSibling;
-                    input.value = value;
-                }
-            });
-        
-            // Dış tıklamalarda seçenekler kapanır ama select classı yalnızca seçim yapılmadıysa kaldırılır
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.custom-select')) {
-                    document.querySelectorAll('.custom-options').forEach(options => {
-                        options.style.display = 'none';
-                    });
-                
-                    document.querySelectorAll('.custom-selected').forEach(el => {
-                        const input = el.parentElement.nextElementSibling; // Gizli input alanı
-                        if (!input.value) {
-                            el.classList.remove('select'); // Seçim yapılmadıysa select classını kaldır
-                        }
-                    });
-                }
-            });
-        });
-    </script>

@@ -179,6 +179,10 @@ footer {
     color: var(--white);
 }
 
+.footer-menu a:hover {
+    color: var(--red);
+}
+
 .footer-bottom {
     width: 60%;
     display: flex;

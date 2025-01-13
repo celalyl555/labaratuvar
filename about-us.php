@@ -17,7 +17,7 @@ include('header.php');
     <main class="detayMain">
 
         <div class="detayImg">
-            <img src="assets/img/sustainability/contact.jpg" alt="CONTACT">
+            <img src="assets/img/sustainability/About-us.jpg" alt="ABOUT US">
         </div>
 
         <div class="detayTxt">
@@ -25,10 +25,10 @@ include('header.php');
             <div class="detayMap">
                 <a href="/labaratuvar">EUROLAB</a>
                 <p>-</p>
-                <a href="sustainability">CONTACT</a>
+                <a href="sustainability">ABOUT US</a>
             </div>
             
-            <h1 class="detayHeader">CONTACT US</h1>
+            <h1 class="detayHeader">ABOUT US</h1>
 
         </div>
     </main>
@@ -51,73 +51,51 @@ include('header.php');
 
         <div class="detayInsideTxt">
 
-            <h2>CONTACT US</h2>
+            <h2>ABOUT US</h2>
             
-            <form id="custom-form">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <p>Welcome to Eurolab, your partner in pioneering solutions that encompass every facet of life. We are committed to delivering comprehensive Assurance, Testing, Inspection, and Certification services, empowering our global clientele with the ultimate confidence in their products and processes.</p>
 
-                <div class="form-group">
-                    <label for="surname">Surname*</label>
-                    <input type="text" id="surname" name="surname" required>
-                </div>
+            <p>At Eurolab, we offer more than just Testing, Inspection, and Certification of products—we are a global leader in Total Quality Assurance for industries worldwide.</p>
 
-                <div class="form-group">
-                    <label for="company">Company Name*</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
+            <p>With over 20 years of history, we are constantly innovating and adapting to reduce risks for consumers, brands and organizations across all industries.</p>
 
-                <div class="form-group">
-                    <label for="phone">Phone*</label>
-                    <input type="text" id="phone" name="phone" required>
-                </div>
+            <p>Our diverse team of professionals, working in 200 countries and locations, combines scientific expertise with technical skill. We help global and local businesses tackle complex challenges such as quality, safety and sustainability every day.</p>
 
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
 
-                <div class="form-group">
-                    <label for="address">Address*</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
+            <h3>Creating Meaningful Change</h3>
 
-                <div class="form-group custom-select-container">
-                    <label for="topic">Subject*</label>
-                    <div class="custom-select" id="custom-topic">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Konu 1">Konu 1</div>
-                            <div data-value="Konu 2">Konu 2</div>
-                            <div data-value="Konu 3">Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic" name="topic">
-                </div>
+            <p>Our efforts are focused on making a positive difference for our clients, our people, and the planet. We are committed to being catalysts for change on a global scale, guided by a strong company culture rooted in our purpose, mission, vision, values, and commitment to our customers.</p>
 
-                <div class="form-group custom-select-container">
-                    <label for="topic-2">Subject-2*</label>
-                    <div class="custom-select" id="custom-topic-2">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Alt Konu 1">Alt Konu 1</div>
-                            <div data-value="Alt Konu 2">Alt Konu 2</div>
-                            <div data-value="Alt Konu 3">Alt Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic-2" name="topic-2">
+            <div class="sidebyside">
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/mission.png" alt="Our Mission">
+                    <h4>Our Mission</h4>
+                    <p>To surpass our customers' expectations by providing tailored and innovative Assurance, Testing, Inspection, and Certification services for their operations and supply chains, anytime, anywhere.</p>
                 </div>
-
-                <div class="form-group">
-                    <label for="message">Your Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/vision.jpg" alt="Testing">
+                    <h4>Our Vision</h4>
+                    <p>To become the most reliable global partner in Quality Assurance.</p>
                 </div>
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/handshake.jpg" alt="Inspection">
+                    <h4>Our Customer Promise</h4>
+                    <p>As your trusted partner, Eurolab delivers Total Quality Assurance with accuracy, speed, and dedication, empowering you to advance confidently and securely.</p>
+                </div>
+            </div>
 
-                <button class="linka2" type="submit">SUBMIT</button>
-            </form>
-            
+            <p><strong>Our Purpose:</strong> Bringing quality, safety, and sustainability into everything we do.</p>
+
+            <h3>Our Values</h3>
+ 
+            <ul>
+                <li><p><strong>We’re a global leader in certification and testing.</strong> Driving progress with precision and integrity.</p></li>
+                <li><p><strong>Global Expertise with Local Insight</strong> We value diversity, bringing together experts worldwide to ensure the highest standards.</p></li>
+                <li><p><strong>Integrity in Every Action</strong> We prioritize accuracy, efficiency, and passion in everything we do.</p></li>
+                <li><p><strong>Collaborative Success</strong> We trust our team, fostering a culture of innovation and shared victories.</p></li>
+                <li><p><strong>Shaping a Resilient Future</strong> We drive sustainable growth, empowering industries and communities alike.</p></li>
+            </ul>
+
         </div>
 
     </section>
@@ -260,45 +238,3 @@ include('footer.php');
 
 
 ?>
-
-    <script>
-        document.querySelectorAll('.custom-select').forEach(select => {
-            const selected = select.querySelector('.custom-selected');
-            const options = select.querySelector('.custom-options');
-                
-            // Tıklandığında select classını ekle
-            selected.addEventListener('click', () => {
-                options.style.display = options.style.display === 'block' ? 'none' : 'block';
-                selected.classList.add('select');
-            });
-        
-            // Bir seçenek seçildiğinde select classını koru
-            options.addEventListener('click', (e) => {
-                const value = e.target.getAttribute('data-value');
-                if (value) {
-                    selected.textContent = e.target.textContent;
-                    selected.classList.add('select'); // Seçim sonrası select classını koru
-                    options.style.display = 'none';
-                
-                    const input = select.nextElementSibling;
-                    input.value = value;
-                }
-            });
-        
-            // Dış tıklamalarda seçenekler kapanır ama select classı yalnızca seçim yapılmadıysa kaldırılır
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.custom-select')) {
-                    document.querySelectorAll('.custom-options').forEach(options => {
-                        options.style.display = 'none';
-                    });
-                
-                    document.querySelectorAll('.custom-selected').forEach(el => {
-                        const input = el.parentElement.nextElementSibling; // Gizli input alanı
-                        if (!input.value) {
-                            el.classList.remove('select'); // Seçim yapılmadıysa select classını kaldır
-                        }
-                    });
-                }
-            });
-        });
-    </script>

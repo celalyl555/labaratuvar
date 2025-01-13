@@ -17,7 +17,7 @@ include('header.php');
     <main class="detayMain">
 
         <div class="detayImg">
-            <img src="assets/img/sustainability/contact.jpg" alt="CONTACT">
+            <img src="assets/img/header/History.jpg" alt="Our History">
         </div>
 
         <div class="detayTxt">
@@ -25,10 +25,10 @@ include('header.php');
             <div class="detayMap">
                 <a href="/labaratuvar">EUROLAB</a>
                 <p>-</p>
-                <a href="sustainability">CONTACT</a>
+                <a href="sustainability">OUR HISTORY</a>
             </div>
             
-            <h1 class="detayHeader">CONTACT US</h1>
+            <h1 class="detayHeader">OUR HISTORY</h1>
 
         </div>
     </main>
@@ -51,73 +51,27 @@ include('header.php');
 
         <div class="detayInsideTxt">
 
-            <h2>CONTACT US</h2>
+            <h2>OUR HISTORY</h2>
             
-            <form id="custom-form">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <p>For many years, our organization has been operating successfully, boasting modern laboratories that meet international standards. These laboratories are equipped with the latest technology devices and equipment, and we have built a strong team of experienced and trained personnel to operate them.</p>
 
-                <div class="form-group">
-                    <label for="surname">Surname*</label>
-                    <input type="text" id="surname" name="surname" required>
-                </div>
+            <p>Throughout our history, we have provided a wide range of testing, analysis, measurement, inspection, and evaluation services. Our core services include electrical safety tests, environmental analyses, textile analyses, food analyses, and water analyses. We have consistently applied globally recognized testing and analysis methods, which has made us a preferred choice among clients.</p>
 
-                <div class="form-group">
-                    <label for="company">Company Name*</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
+            <p><strong>From the beginning, we have upheld two fundamental principles in all our activities:</strong></p>
 
-                <div class="form-group">
-                    <label for="phone">Phone*</label>
-                    <input type="text" id="phone" name="phone" required>
-                </div>
+            <ul>
+                <li><p>We strictly adhere to existing legal regulations and relevant standards published by domestic and international organizations in all testing and analysis activities, whether sector-based or general in nature.</p></li>
+                <li><p>Our organization is accredited by TS EN ISO/IEC 17021, the Turkish Accreditation Agency (TÜRKAK), and ISO/IEC 17025 UAF (United Accreditation Foundation), ensuring that our operations are conducted within this accredited framework.</p></li>
+            </ul>
 
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+            <p>Since day one, we have been committed to providing fast, high-quality, accurate, and reliable services to our clients, and we continue to uphold these values as we move forward.</p>
+ 
+            <p>Over the years, our top management has closely followed technological advancements related to our fields of operation and has supported our employees in developing their skills. We have always prioritized using state-of-the-art devices in our operations.</p>
 
-                <div class="form-group">
-                    <label for="address">Address*</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
+            <p>Our brand, EUROLAB LABORATUVAR A.Ş., is registered with the Turkish Patent Institute under registration numbers 2016/47906, 2016/109104, and 2016/06561.</p>
 
-                <div class="form-group custom-select-container">
-                    <label for="topic">Subject*</label>
-                    <div class="custom-select" id="custom-topic">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Konu 1">Konu 1</div>
-                            <div data-value="Konu 2">Konu 2</div>
-                            <div data-value="Konu 3">Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic" name="topic">
-                </div>
+            <p>Understanding the critical importance of occupational health and safety in improving the living standards of individuals and societies, we have always felt a deep sense of responsibility. We adhere to a philosophy of voluntary compliance and strive to prevent material and moral losses in this area in our country.</p>
 
-                <div class="form-group custom-select-container">
-                    <label for="topic-2">Subject-2*</label>
-                    <div class="custom-select" id="custom-topic-2">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Alt Konu 1">Alt Konu 1</div>
-                            <div data-value="Alt Konu 2">Alt Konu 2</div>
-                            <div data-value="Alt Konu 3">Alt Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic-2" name="topic-2">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Your Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button class="linka2" type="submit">SUBMIT</button>
-            </form>
-            
         </div>
 
     </section>
@@ -260,45 +214,3 @@ include('footer.php');
 
 
 ?>
-
-    <script>
-        document.querySelectorAll('.custom-select').forEach(select => {
-            const selected = select.querySelector('.custom-selected');
-            const options = select.querySelector('.custom-options');
-                
-            // Tıklandığında select classını ekle
-            selected.addEventListener('click', () => {
-                options.style.display = options.style.display === 'block' ? 'none' : 'block';
-                selected.classList.add('select');
-            });
-        
-            // Bir seçenek seçildiğinde select classını koru
-            options.addEventListener('click', (e) => {
-                const value = e.target.getAttribute('data-value');
-                if (value) {
-                    selected.textContent = e.target.textContent;
-                    selected.classList.add('select'); // Seçim sonrası select classını koru
-                    options.style.display = 'none';
-                
-                    const input = select.nextElementSibling;
-                    input.value = value;
-                }
-            });
-        
-            // Dış tıklamalarda seçenekler kapanır ama select classı yalnızca seçim yapılmadıysa kaldırılır
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.custom-select')) {
-                    document.querySelectorAll('.custom-options').forEach(options => {
-                        options.style.display = 'none';
-                    });
-                
-                    document.querySelectorAll('.custom-selected').forEach(el => {
-                        const input = el.parentElement.nextElementSibling; // Gizli input alanı
-                        if (!input.value) {
-                            el.classList.remove('select'); // Seçim yapılmadıysa select classını kaldır
-                        }
-                    });
-                }
-            });
-        });
-    </script>

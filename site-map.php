@@ -17,7 +17,7 @@ include('header.php');
     <main class="detayMain">
 
         <div class="detayImg">
-            <img src="assets/img/sustainability/contact.jpg" alt="CONTACT">
+            <img src="assets/img/sustainability/sitemap.webp" alt="SITE MAP">
         </div>
 
         <div class="detayTxt">
@@ -25,10 +25,10 @@ include('header.php');
             <div class="detayMap">
                 <a href="/labaratuvar">EUROLAB</a>
                 <p>-</p>
-                <a href="sustainability">CONTACT</a>
+                <a href="sustainability">SITE MAP</a>
             </div>
             
-            <h1 class="detayHeader">CONTACT US</h1>
+            <h1 class="detayHeader">SITE MAP</h1>
 
         </div>
     </main>
@@ -50,74 +50,57 @@ include('header.php');
         </div>
 
         <div class="detayInsideTxt">
-
-            <h2>CONTACT US</h2>
             
-            <form id="custom-form">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <div class="sitemap-container">
+                <h1>SITE MAP</h1>
+                <ul class="sitemap">
+                    <li>
+                        <a href="/labaratuvar">Home</a>
+                    </li>
+                    <li>
+                        <a href="sustainability">EXPERTISE FOR SUSTAINABILITY</a>
+                    </li>
+                    <li>
+                        <a href="services">INDUSTRIES & SERVICES</a>
+                        <ul>
+                            <li>
+                                <a href="#">AGRI-FOOD</a>
+                                <ul>
+                                    <li><a href="#">Agri-com</a></li>
+                                    <li><a href="#">Agri-com</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">AGRI-FOOD1</a>
+                                <ul>
+                                    <li><a href="#">Agri-com1</a></li>
+                                    <li><a href="#">Agri-com1</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">AGRI-FOOD2</a>
+                                <ul>
+                                    <li><a href="#">Agri-com2</a></li>
+                                    <li><a href="#">Agri-com2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about-us">ABOUT US</a>
+                        <ul>
+                            <li><a href="our-history">Our History</a></li>
+                            <li><a href="about-us">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">CONTACT</a></li>
+                    <li><a href="news">NEWS</a></li>
+                    <li><a href="responsibility">RESPONSIBILITY</a></li>
+                    <li><a href="careers">CAREERS</a></li>
+                    <li><a href="site-map">SITE MAP</a></li>
+                </ul>
+            </div>
 
-                <div class="form-group">
-                    <label for="surname">Surname*</label>
-                    <input type="text" id="surname" name="surname" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="company">Company Name*</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone*</label>
-                    <input type="text" id="phone" name="phone" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="address">Address*</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-
-                <div class="form-group custom-select-container">
-                    <label for="topic">Subject*</label>
-                    <div class="custom-select" id="custom-topic">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Konu 1">Konu 1</div>
-                            <div data-value="Konu 2">Konu 2</div>
-                            <div data-value="Konu 3">Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic" name="topic">
-                </div>
-
-                <div class="form-group custom-select-container">
-                    <label for="topic-2">Subject-2*</label>
-                    <div class="custom-select" id="custom-topic-2">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Alt Konu 1">Alt Konu 1</div>
-                            <div data-value="Alt Konu 2">Alt Konu 2</div>
-                            <div data-value="Alt Konu 3">Alt Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic-2" name="topic-2">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Your Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button class="linka2" type="submit">SUBMIT</button>
-            </form>
-            
         </div>
 
     </section>
@@ -260,45 +243,3 @@ include('footer.php');
 
 
 ?>
-
-    <script>
-        document.querySelectorAll('.custom-select').forEach(select => {
-            const selected = select.querySelector('.custom-selected');
-            const options = select.querySelector('.custom-options');
-                
-            // Tıklandığında select classını ekle
-            selected.addEventListener('click', () => {
-                options.style.display = options.style.display === 'block' ? 'none' : 'block';
-                selected.classList.add('select');
-            });
-        
-            // Bir seçenek seçildiğinde select classını koru
-            options.addEventListener('click', (e) => {
-                const value = e.target.getAttribute('data-value');
-                if (value) {
-                    selected.textContent = e.target.textContent;
-                    selected.classList.add('select'); // Seçim sonrası select classını koru
-                    options.style.display = 'none';
-                
-                    const input = select.nextElementSibling;
-                    input.value = value;
-                }
-            });
-        
-            // Dış tıklamalarda seçenekler kapanır ama select classı yalnızca seçim yapılmadıysa kaldırılır
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.custom-select')) {
-                    document.querySelectorAll('.custom-options').forEach(options => {
-                        options.style.display = 'none';
-                    });
-                
-                    document.querySelectorAll('.custom-selected').forEach(el => {
-                        const input = el.parentElement.nextElementSibling; // Gizli input alanı
-                        if (!input.value) {
-                            el.classList.remove('select'); // Seçim yapılmadıysa select classını kaldır
-                        }
-                    });
-                }
-            });
-        });
-    </script>

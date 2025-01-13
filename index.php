@@ -88,7 +88,7 @@ include('header.php');
             </div>
             <div class="missionTxt">
                 <h2>SHAPING A WORLD OF TRUST</h2>
-                <a href="" class="btnheader trust">MISSION / PURPOSE<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                <a href="responsibility" class="btnheader trust">MISSION / PURPOSE<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
             </div>
 
             <div class="borderscreen">
@@ -118,8 +118,8 @@ include('header.php');
             </div>
             <div class="historyTxt">
                 <div class="historyTxtCol">
-                    <h2>190 years and still innovating</h2>
-                    <a href="" class="btnheader trust">Our History<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                    <h2>Excellence Through Modern Expertise</h2>
+                    <a href="our-history" class="btnheader trust">Our History<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
                 </div>
                 <div class="historyTxtImg">
                     <img src="assets/img/main/eurolab.avif" alt="Shaping a World of Trust">

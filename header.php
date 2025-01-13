@@ -171,18 +171,18 @@ include('db.php');
                         <div class="content-text subinside w-50">
                             <h2>Our History</h2>
                             <p>For many years, our organization has been operating successfully, boasting modern laboratories that meet international standards. These laboratories are equipped with the latest technology devices and equipment, and we have built a strong team of experienced and trained personnel to operate them.</p>
-                            <a href="services" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                            <a href="our-history" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
                         </div>
                         <div class="content-text subinside w-50">
                             <h2>About Us</h2>
                             <p>Welcome to Eurolab, your partner in pioneering solutions that encompass every facet of life. We are committed to delivering comprehensive Assurance, Testing, Inspection, and Certification services, empowering our global clientele with the ultimate confidence in their products and processes.</p>
-                            <a href="services" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                            <a href="about-us" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
                         </div>
                     </ul>
                 </li>
-                <li><a href="" class="navSida">CONTACTS</a></li>
+                <li><a href="contact" class="navSida">CONTACT</a></li>
                 <li><a href="" class="navSida">News</a></li>
-                <li><a href="" class="navSida">Responsibility</a></li>
+                <li><a href="responsibility" class="navSida">Responsibility</a></li>
             </ul>
         </div>
     </div>
@@ -260,7 +260,7 @@ include('db.php');
 
         <div class="bottom-header">
 
-            <a class="header-img" href="">
+            <a class="header-img" href="/labaratuvar">
                 <img src="assets/img/logo/logo.png" alt="Home">
             </a>
 
@@ -272,7 +272,7 @@ include('db.php');
 
                     <li><button class="navA" onclick="toggleDiv(event, 'div2')"><div class="Ehover"></div>ABOUT US</button></li>
 
-                    <li><a href="" class="navA"><div class="Ehover"></div>CONTACTS</a></li>
+                    <li><a href="contact" class="navA"><div class="Ehover"></div>CONTACT</a></li>
 
                 </ul>
             </nav>
@@ -280,7 +280,7 @@ include('db.php');
             <nav class="navMain right">
                 <ul>
                     <li><a href="" class="navA blNone"><div class="Ehover"></div>News</a></li>
-                    <li><a href="" class="navA"><div class="Ehover"></div>Responsibility</a></li>
+                    <li><a href="responsibility" class="navA"><div class="Ehover"></div>Responsibility</a></li>
                 </ul>
             </nav>
 
@@ -458,13 +458,13 @@ include('db.php');
             <div class="content-text w-50">
                 <h2>Our History</h2>
                 <p>For many years, our organization has been operating successfully, boasting modern laboratories that meet international standards. These laboratories are equipped with the latest technology devices and equipment, and we have built a strong team of experienced and trained personnel to operate them.</p>
-                <a href="services" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                <a href="our-history" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
             </div>
 
             <div class="content-text w-50">
                 <h2>About Us</h2>
                 <p>Welcome to Eurolab, your partner in pioneering solutions that encompass every facet of life. We are committed to delivering comprehensive Assurance, Testing, Inspection, and Certification services, empowering our global clientele with the ultimate confidence in their products and processes.</p>
-                <a href="services" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                <a href="about-us" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
             </div>
 
         </div>

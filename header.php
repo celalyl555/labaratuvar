@@ -11,7 +11,7 @@ include('db.php');
 
     <link rel="icon" sizes="192x192" href="assets/img/logo/favicon.ico">
     <title>EUROLAB | Kalite</title>
-    
+
     <!-- Library -->
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
@@ -38,16 +38,16 @@ include('db.php');
                 </svg>
             </button>
             <ul class="accordion">
-                <li><a href="" class="navSida">EXPERTISE FOR SUSTAINABILITY</a></li>
+                <li><a href="sustainability" class="navSida">EXPERTISE FOR SUSTAINABILITY</a></li>
                 <li>
-                    <button class="navSida accordion-btn"><div class="Ehover1"></div>MARKETS & SERVICES</button>
+                    <button class="navSida accordion-btn"><div class="Ehover1"></div>INDUSTRIES & SERVICES</button>
                     
                     <div class="a-submenu">
                 
                         <div class="content-text subinside">
-                            <h2>Explore our range of markets and services</h2>
-                            <p>Our solutions and services help our clients reduce risk, improve their performance and meet the challenges of quality, health & safety, environmental protection and social responsibility.</p>
-                            <a href="" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                            <h2>Discover Our Diverse Industries and Tailored Services</h2>
+                            <p>We provide comprehensive solutions designed to help our clients mitigate risks, enhance performance, and excel in key areas such as quality, health & safety, environmental sustainability, and social responsibility.</p>
+                            <a href="services" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
                         </div>
                 
                         <div class="content-map subinside">
@@ -66,7 +66,7 @@ include('db.php');
                                                     <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                                 <ul class="submenu-child">
-                                                    <li><a href="">Sub-Option 1</a></li>
+                                                    <li><a href="">Sub-Option 1213123</a></li>
                                                     <li><a href="">Sub-Option 2</a></li>
                                                 </ul>
                                             </li>
@@ -166,15 +166,23 @@ include('db.php');
                     </div>
                 </li>
                 <li>
-                    <button class="navSida accordion-btn"><div class="Ehover1"></div>INSIGHT</button>
+                    <button class="navSida accordion-btn"><div class="Ehover1"></div>ABOUT US</button>
                     <ul class="a-submenu">
-                        veriler burda1
+                        <div class="content-text subinside w-50">
+                            <h2>Our History</h2>
+                            <p>For many years, our organization has been operating successfully, boasting modern laboratories that meet international standards. These laboratories are equipped with the latest technology devices and equipment, and we have built a strong team of experienced and trained personnel to operate them.</p>
+                            <a href="our-history" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                        </div>
+                        <div class="content-text subinside w-50">
+                            <h2>About Us</h2>
+                            <p>Welcome to Eurolab, your partner in pioneering solutions that encompass every facet of life. We are committed to delivering comprehensive Assurance, Testing, Inspection, and Certification services, empowering our global clientele with the ultimate confidence in their products and processes.</p>
+                            <a href="about-us" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                        </div>
                     </ul>
                 </li>
-                <li><a href="" class="navSida">GROUP</a></li>
+                <li><a href="contact" class="navSida">CONTACT</a></li>
                 <li><a href="" class="navSida">News</a></li>
-                <li><a href="" class="navSida">Careers</a></li>
-                <li><a href="" class="navSida">Investors</a></li>
+                <li><a href="responsibility" class="navSida">Responsibility</a></li>
             </ul>
         </div>
     </div>
@@ -252,19 +260,19 @@ include('db.php');
 
         <div class="bottom-header">
 
-            <a class="header-img" href="">
+            <a class="header-img" href="/labaratuvar">
                 <img src="assets/img/logo/logo.png" alt="Home">
             </a>
 
             <nav class="navMain">
                 <ul>
-                    <li><a href="" class="navA blNone"><div class="Ehover"></div>EXPERTISE FOR SUSTAINABILITY</a></li>
+                    <li><a href="sustainability" class="navA blNone"><div class="Ehover"></div>EXPERTISE FOR SUSTAINABILITY</a></li>
 
-                    <li><button class="navA" onclick="toggleDiv(event, 'div1')"><div class="Ehover"></div>MARKETS & SERVICES</button></li>
+                    <li><button class="navA" onclick="toggleDiv(event, 'div1')"><div class="Ehover"></div>INDUSTRIES & SERVICES</button></li>
 
-                    <li><button class="navA" onclick="toggleDiv(event, 'div2')"><div class="Ehover"></div>INSIGHT</button></li>
+                    <li><button class="navA" onclick="toggleDiv(event, 'div2')"><div class="Ehover"></div>ABOUT US</button></li>
 
-                    <li><a href="" class="navA"><div class="Ehover"></div>GROUP</a></li>
+                    <li><a href="contact" class="navA"><div class="Ehover"></div>CONTACT</a></li>
 
                 </ul>
             </nav>
@@ -272,8 +280,7 @@ include('db.php');
             <nav class="navMain right">
                 <ul>
                     <li><a href="" class="navA blNone"><div class="Ehover"></div>News</a></li>
-                    <li><a href="" class="navA"><div class="Ehover"></div>Careers</a></li>
-                    <li><a href="" class="navA"><div class="Ehover"></div>Investors</a></li>
+                    <li><a href="responsibility" class="navA"><div class="Ehover"></div>Responsibility</a></li>
                 </ul>
             </nav>
 
@@ -286,14 +293,60 @@ include('db.php');
             </div>
 
             <div class="content-text">
-                <h2>Explore our range of markets and services</h2>
-                <p>Our solutions and services help our clients reduce risk, improve their performance and meet the challenges of quality, health & safety, environmental protection and social responsibility.</p>
-                <a href="" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                <h2>Discover Our Diverse Industries and Tailored Services</h2>
+                <p>We provide comprehensive solutions designed to help our clients mitigate risks, enhance performance, and excel in key areas such as quality, health & safety, environmental sustainability, and social responsibility.</p>
+                <a href="services" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
             </div>
 
             <div class="content-map">
                 <div class="menu-container">
-                    <ul class="menu">
+                    
+                    <ul class="menu two">
+                        <li class="menu-item has-submenu">
+                            <a href=""><div class="borderhover"></div>AGRI-FOOD</a>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <ul class="submenu">
+                                <li class="has-submenu-child">
+                                    <a href=""><div class="borderhover"></div>Agri-com</a>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="submenu-child">
+                                        <li><a href="">Sub-Option 1</a></li>
+                                        <li><a href="">Sub-Option 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu-child">
+                                    <a href=""><div class="borderhover"></div>Agri-com</a>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="submenu-child">
+                                        <li><a href="">Sub-Option 1</a></li>
+                                        <li><a href="">Sub-Option 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu-child">
+                                    <a href="">Agri-comAgri</a>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="submenu-child">
+                                        <li><a href="">Sub-Option 1</a></li>
+                                        <li><a href="">Sub-Option 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="">CLARITY BY BUREAU VERITAS</a></li>
+                        <li class="menu-item"><a href="">CLARITY BY BUREAU VERITAS</a></li>
+                        <li class="menu-item"><a href="">CLARITY BY BUREAU VERITAS</a></li>
+                        <li class="menu-item"><a href="">CLARITY BY BUREAU VERITAS</a></li>
+                    </ul>
+
+                    <ul class="menu two">
                         <li class="menu-item"><a href="">CLARITY BY BUREAU VERITAS</a></li>
                         <li class="menu-item has-submenu">
                             <a href=""><div class="borderhover"></div>AGRI-FOOD</a>
@@ -301,27 +354,37 @@ include('db.php');
                                 <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <ul class="submenu">
-                                            <li class="has-submenu-child">
-                                                <a href=""><div class="borderhover"></div>Agri-com</a>
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <ul class="submenu-child">
-                                                    <li><a href="">Sub-Option 1</a></li>
-                                                    <li><a href="">Sub-Option 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-submenu-child">
-                                                <a href="">Agri-comAgri</a>
-                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <ul class="submenu-child">
-                                                    <li><a href="">Sub-Option 1</a></li>
-                                                    <li><a href="">Sub-Option 2</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                <li class="has-submenu-child">
+                                    <a href=""><div class="borderhover"></div>Agri-com</a>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="submenu-child">
+                                        <li><a href="">Sub-Option 1</a></li>
+                                        <li><a href="">Sub-Option 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu-child">
+                                    <a href=""><div class="borderhover"></div>Agri-com</a>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="submenu-child">
+                                        <li><a href="">Sub-Option 1</a></li>
+                                        <li><a href="">Sub-Option 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu-child">
+                                    <a href="">Agri-comAgri</a>
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="submenu-child">
+                                        <li><a href="">Sub-Option 1</a></li>
+                                        <li><a href="">Sub-Option 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="menu-item has-submenu">
                             <a href=""><div class="borderhover"></div>AUTOMOTIVE & TRANSPORT</a>
@@ -378,27 +441,6 @@ include('db.php');
                                 <li>Marine Certification</li>
                             </ul>
                         </li>
-
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li><li class="menu-item">CYBERSECURITY</li>
-                        <li class="menu-item">CYBERSECURITY</li>
                         
                     </ul>
                 </div>
@@ -407,7 +449,24 @@ include('db.php');
         </div>
 
         <div id="div2" class="hidden content-div">
-            <p>Content for MARKETS & SERVICES</p>
+
+            <div class="content-img">
+                <img src="assets/img/header/History.jpg" alt="header">
+                <div class="overlayc"></div>
+            </div>
+
+            <div class="content-text w-50">
+                <h2>Our History</h2>
+                <p>For many years, our organization has been operating successfully, boasting modern laboratories that meet international standards. These laboratories are equipped with the latest technology devices and equipment, and we have built a strong team of experienced and trained personnel to operate them.</p>
+                <a href="our-history" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+            </div>
+
+            <div class="content-text w-50">
+                <h2>About Us</h2>
+                <p>Welcome to Eurolab, your partner in pioneering solutions that encompass every facet of life. We are committed to delivering comprehensive Assurance, Testing, Inspection, and Certification services, empowering our global clientele with the ultimate confidence in their products and processes.</p>
+                <a href="about-us" class="btnheader">Discover<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+            </div>
+
         </div>
 
         

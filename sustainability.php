@@ -17,7 +17,7 @@ include('header.php');
     <main class="detayMain">
 
         <div class="detayImg">
-            <img src="assets/img/sustainability/contact.jpg" alt="CONTACT">
+            <img src="assets/img/sustainability/sustain.jpg" alt="EXPERTISE FOR SUSTAINABILITY">
         </div>
 
         <div class="detayTxt">
@@ -25,10 +25,10 @@ include('header.php');
             <div class="detayMap">
                 <a href="/labaratuvar">EUROLAB</a>
                 <p>-</p>
-                <a href="sustainability">CONTACT</a>
+                <a href="sustainability">EXPERTISE FOR SUSTAINABILITY</a>
             </div>
             
-            <h1 class="detayHeader">CONTACT US</h1>
+            <h1 class="detayHeader">EXPERTISE FOR SUSTAINABILITY</h1>
 
         </div>
     </main>
@@ -51,73 +51,34 @@ include('header.php');
 
         <div class="detayInsideTxt">
 
-            <h2>CONTACT US</h2>
+            <h2>Expertise for Sustainability</h2>
             
-            <form id="custom-form">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <p>At Eurolab, sustainability is at the heart of everything we do. With a focus on environmental, social, and economic responsibility, we provide specialized expertise to help businesses achieve their sustainability goals. Our approach combines cutting-edge technology, accredited testing, and in-depth knowledge to support your efforts towards a greener, more sustainable future.</p>
 
-                <div class="form-group">
-                    <label for="surname">Surname*</label>
-                    <input type="text" id="surname" name="surname" required>
-                </div>
+            <img class="detayimgsus" src="assets/img/sustainability/bg2.jpeg" alt="Expertise for Sustainability">
 
-                <div class="form-group">
-                    <label for="company">Company Name*</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
+            <h3>Our Expertise Includes:</h3>
 
-                <div class="form-group">
-                    <label for="phone">Phone*</label>
-                    <input type="text" id="phone" name="phone" required>
-                </div>
+            <ul>
+                <li><p><strong>Sustainability Certifications:</strong> Guiding businesses through the process of obtaining internationally recognized sustainability certifications such as ISO 14001 for Environmental Management and ISO 50001 for Energy Management.</p></li>
+                <li><p><strong>Carbon Footprint and Emission Reduction:</strong> Offering precise carbon footprint assessments and strategic solutions to minimize environmental impact.</p></li>
+                <li><p><strong>Life Cycle Assessment (LCA):</strong> Evaluating the environmental effects of products and services throughout their entire life cycle to ensure sustainable practices.</p></li>
+                <li><p><strong>Green Building Certifications:</strong> Assisting in acquiring eco-friendly building certifications, promoting energy efficiency and sustainability in construction.</p></li>
+                <li><p><strong>Sustainable Supply Chain Solutions:</strong> Helping businesses ensure their entire supply chain adheres to sustainable and ethical practices.</p></li>
+            </ul>
 
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+            <img class="detayimgsus" src="assets/img/sustainability/bg1.jpg" alt="Expertise Includes">
 
-                <div class="form-group">
-                    <label for="address">Address*</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
+            <h3>Why Choose Eurolab for Sustainability?</h3>
 
-                <div class="form-group custom-select-container">
-                    <label for="topic">Subject*</label>
-                    <div class="custom-select" id="custom-topic">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Konu 1">Konu 1</div>
-                            <div data-value="Konu 2">Konu 2</div>
-                            <div data-value="Konu 3">Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic" name="topic">
-                </div>
+            <ul>
+                <li><p>Trusted expertise with globally recognized accreditations.</p></li>
+                <li><p>Tailored solutions that fit your business’s unique sustainability challenges.</p></li>
+                <li><p>Comprehensive guidance from assessment to implementation.</p></li>
+            </ul>
 
-                <div class="form-group custom-select-container">
-                    <label for="topic-2">Subject-2*</label>
-                    <div class="custom-select" id="custom-topic-2">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Alt Konu 1">Alt Konu 1</div>
-                            <div data-value="Alt Konu 2">Alt Konu 2</div>
-                            <div data-value="Alt Konu 3">Alt Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic-2" name="topic-2">
-                </div>
+            <p>At Eurolab, we’re committed to delivering impactful sustainability solutions. Let us help you lead the way towards a more sustainable future.</p>
 
-                <div class="form-group">
-                    <label for="message">Your Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button class="linka2" type="submit">SUBMIT</button>
-            </form>
-            
         </div>
 
     </section>
@@ -260,45 +221,3 @@ include('footer.php');
 
 
 ?>
-
-    <script>
-        document.querySelectorAll('.custom-select').forEach(select => {
-            const selected = select.querySelector('.custom-selected');
-            const options = select.querySelector('.custom-options');
-                
-            // Tıklandığında select classını ekle
-            selected.addEventListener('click', () => {
-                options.style.display = options.style.display === 'block' ? 'none' : 'block';
-                selected.classList.add('select');
-            });
-        
-            // Bir seçenek seçildiğinde select classını koru
-            options.addEventListener('click', (e) => {
-                const value = e.target.getAttribute('data-value');
-                if (value) {
-                    selected.textContent = e.target.textContent;
-                    selected.classList.add('select'); // Seçim sonrası select classını koru
-                    options.style.display = 'none';
-                
-                    const input = select.nextElementSibling;
-                    input.value = value;
-                }
-            });
-        
-            // Dış tıklamalarda seçenekler kapanır ama select classı yalnızca seçim yapılmadıysa kaldırılır
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.custom-select')) {
-                    document.querySelectorAll('.custom-options').forEach(options => {
-                        options.style.display = 'none';
-                    });
-                
-                    document.querySelectorAll('.custom-selected').forEach(el => {
-                        const input = el.parentElement.nextElementSibling; // Gizli input alanı
-                        if (!input.value) {
-                            el.classList.remove('select'); // Seçim yapılmadıysa select classını kaldır
-                        }
-                    });
-                }
-            });
-        });
-    </script>

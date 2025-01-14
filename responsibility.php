@@ -17,7 +17,7 @@ include('header.php');
     <main class="detayMain">
 
         <div class="detayImg">
-            <img src="assets/img/sustainability/contact.jpg" alt="CONTACT">
+            <img src="assets/img/sustainability/respons.jpg" alt="RESPONSIBILITY">
         </div>
 
         <div class="detayTxt">
@@ -25,10 +25,10 @@ include('header.php');
             <div class="detayMap">
                 <a href="/labaratuvar">EUROLAB</a>
                 <p>-</p>
-                <a href="sustainability">CONTACT</a>
+                <a href="sustainability">RESPONSIBILITY</a>
             </div>
             
-            <h1 class="detayHeader">CONTACT US</h1>
+            <h1 class="detayHeader">RESPONSIBILITY</h1>
 
         </div>
     </main>
@@ -51,73 +51,53 @@ include('header.php');
 
         <div class="detayInsideTxt">
 
-            <h2>CONTACT US</h2>
+            <h2>RESPONSIBILITY</h2>
             
-            <form id="custom-form">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <p>Our mission to enhance quality, safety, and sustainability drives us to be a positive force in society.</p>
 
-                <div class="form-group">
-                    <label for="surname">Surname*</label>
-                    <input type="text" id="surname" name="surname" required>
-                </div>
+            <h3>A Purpose-Driven Company</h3>
 
-                <div class="form-group">
-                    <label for="company">Company Name*</label>
-                    <input type="text" id="company" name="company" required>
-                </div>
+            <p>At Eurolab, sustainability is at the heart of everything we do, guiding our purpose, vision, values, and strategy. We believe that sustainability goes beyond achieving net zero—it’s about creating lasting positive change.</p>
 
-                <div class="form-group">
-                    <label for="phone">Phone*</label>
-                    <input type="text" id="phone" name="phone" required>
-                </div>
+            <h3>Our Approach to Sustainability Excellence</h3>
 
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+            <p>Our Sustainability Excellence strategy is integral to our business operations. We are committed to driving positive impacts through our client work while advancing our own sustainability goals, continuously engaging our teams on this journey.</p>
 
-                <div class="form-group">
-                    <label for="address">Address*</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
+            <p>We achieve this by implementing comprehensive action plans for each site, accurately measuring sustainability performance, and maintaining robust governance. We hold ourselves accountable to our TSA Corporate Sustainability standards , international best practices, stakeholder expectations, and emerging regulations.</p>
 
-                <div class="form-group custom-select-container">
-                    <label for="topic">Subject*</label>
-                    <div class="custom-select" id="custom-topic">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Konu 1">Konu 1</div>
-                            <div data-value="Konu 2">Konu 2</div>
-                            <div data-value="Konu 3">Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic" name="topic">
+            <div class="sidebyside">
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/resp1.webp" alt="Key Priorities">
+                    <h4>Key Priorities</h4>
+                    <p>Our Sustainability Excellence strategy provides the framework and rigor required to meet our performance goals.</p>
                 </div>
-
-                <div class="form-group custom-select-container">
-                    <label for="topic-2">Subject-2*</label>
-                    <div class="custom-select" id="custom-topic-2">
-                        <div class="custom-selected">Select</div>
-                        <div class="custom-options">
-                            <div data-value="Alt Konu 1">Alt Konu 1</div>
-                            <div data-value="Alt Konu 2">Alt Konu 2</div>
-                            <div data-value="Alt Konu 3">Alt Konu 3</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="topic-2" name="topic-2">
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/resp2.webp" alt="Empowering Our People">
+                    <h4>Empowering Our People</h4>
+                    <p>We strive to cultivate a workforce that is fully engaged and operates within a safe and secure environment.</p>
                 </div>
-
-                <div class="form-group">
-                    <label for="message">Your Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/resp3.jpg" alt="Partnering with Clients">
+                    <h4>Partnering with Clients</h4>
+                    <p>We are dedicated to enabling our clients to maintain safe and sustainable operations.</p>
                 </div>
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/resp4.jpg" alt="Environmental Commitment">
+                    <h4>Environmental Commitment</h4>
+                    <p>We are on a mission to achieve full decarbonization of our operations by 2050.</p>
+                </div>
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/resp5.webp" alt="Community Engagement">
+                    <h4>Community Engagement</h4>
+                    <p>We are committed to making meaningful contributions to the communities where we are active.</p>
+                </div>
+                <div class="sideBox">
+                    <img src="assets/img/sustainability/resp6.jpg" alt="Ethical Operations">
+                    <h4>Ethical Operations</h4>
+                    <p>We maintain unwavering standards of quality and compliance in all aspects of our business.</p>
+                </div>
+            </div>
 
-                <button class="linka2" type="submit">SUBMIT</button>
-            </form>
-            
         </div>
 
     </section>
@@ -260,45 +240,3 @@ include('footer.php');
 
 
 ?>
-
-    <script>
-        document.querySelectorAll('.custom-select').forEach(select => {
-            const selected = select.querySelector('.custom-selected');
-            const options = select.querySelector('.custom-options');
-                
-            // Tıklandığında select classını ekle
-            selected.addEventListener('click', () => {
-                options.style.display = options.style.display === 'block' ? 'none' : 'block';
-                selected.classList.add('select');
-            });
-        
-            // Bir seçenek seçildiğinde select classını koru
-            options.addEventListener('click', (e) => {
-                const value = e.target.getAttribute('data-value');
-                if (value) {
-                    selected.textContent = e.target.textContent;
-                    selected.classList.add('select'); // Seçim sonrası select classını koru
-                    options.style.display = 'none';
-                
-                    const input = select.nextElementSibling;
-                    input.value = value;
-                }
-            });
-        
-            // Dış tıklamalarda seçenekler kapanır ama select classı yalnızca seçim yapılmadıysa kaldırılır
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.custom-select')) {
-                    document.querySelectorAll('.custom-options').forEach(options => {
-                        options.style.display = 'none';
-                    });
-                
-                    document.querySelectorAll('.custom-selected').forEach(el => {
-                        const input = el.parentElement.nextElementSibling; // Gizli input alanı
-                        if (!input.value) {
-                            el.classList.remove('select'); // Seçim yapılmadıysa select classını kaldır
-                        }
-                    });
-                }
-            });
-        });
-    </script>

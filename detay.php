@@ -88,7 +88,7 @@ if ($kategoriler) {
                     <a href="<?= $breadcrumb['url'] ?>">
                         <?= $breadcrumb['name'] ?>
                         <?php if ($index < $count - 1): ?>
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <p>-</p>
                         <?php endif; ?>
                     </a>
                     <?php endforeach; ?>
@@ -138,7 +138,7 @@ if ($kategoriler) {
         <div class="sertifika">
 
             <div class="sertifikabg">
-                <h2>FOSTERING TRUST, IMPROVING PERFORMANCE</h2>
+                <h2>DRIVING INNOVATION, DELIVERING EXCELLENCE</h2>
             </div>
 
             <div class="sertifikaSlider1">

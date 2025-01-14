@@ -287,6 +287,9 @@ section {
     font-family: var(--txt);
     font-weight: 800;
 }
+.btnheader.trust:hover svg {
+    transform: translateX(0px) !important;
+}
 
 .borderscreen {
     position: absolute;

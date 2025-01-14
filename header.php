@@ -181,7 +181,7 @@ include('db.php');
                     </ul>
                 </li>
                 <li><a href="contact" class="navSida">CONTACT</a></li>
-                <li><a href="" class="navSida">News</a></li>
+                <li><a href="news" class="navSida">News</a></li>
                 <li><a href="responsibility" class="navSida">Responsibility</a></li>
             </ul>
         </div>
@@ -198,7 +198,7 @@ include('db.php');
         <div class="top-header">
 
             <div class="news-header">
-                <a href="">
+                <a href="news">
                     <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                     	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                     <g>
@@ -279,7 +279,7 @@ include('db.php');
 
             <nav class="navMain right">
                 <ul>
-                    <li><a href="" class="navA blNone"><div class="Ehover"></div>News</a></li>
+                    <li><a href="news" class="navA blNone"><div class="Ehover"></div>News</a></li>
                     <li><a href="responsibility" class="navA"><div class="Ehover"></div>Responsibility</a></li>
                 </ul>
             </nav>

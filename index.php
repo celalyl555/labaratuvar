@@ -20,7 +20,7 @@ include('header.php');
                 <div class="mainSlide-inside">
                     <div class="mainSlide-txt">
                         <div class="gradient-button clr1">PRESS RELEASE</div>
-                        <p>Bureau Veritas enters the CAC 40 Paris stock index</p>
+                        <p>Eurolab appointed by international ECO LABEL programme</p>
                     </div>
                     <a href="#" class="linka">READ MORE</a>
                 </div>
@@ -31,7 +31,7 @@ include('header.php');
                 <div class="mainSlide-inside">
                     <div class="mainSlide-txt">
                         <div class="gradient-button clr2">PRESS RELEASE</div>
-                        <p>Bureau Veritas Ranked Among Top-Performing Companies in the S&P Global Rating (DJSI)</p>
+                        <p>Eurolab Re-Launches Sustainable Solutions Platform</p>
                     </div>
                     <a href="#" class="linka">READ MORE</a>
                 </div>
@@ -42,7 +42,7 @@ include('header.php');
                 <div class="mainSlide-inside">
                     <div class="mainSlide-txt">
                         <div class="gradient-button clr3">PRESS RELEASE</div>
-                        <p>Bureau Veritas Ranked Among Top-Performing Companies in the S&P Global Rating (DJSI)</p>
+                        <p>Eurolab to Provide Conformity Assessment Services Globally</p>
                     </div>
                     <a href="#" class="linka">READ MORE</a>
                 </div>
@@ -208,14 +208,14 @@ include('header.php');
 
             <div class="haberHeader headerp">
                 <h2><strong>WHAT'S</strong> <br> NEW</h2>
-                <a href="" class="btnheader trust ">See all news<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
+                <a href="news" class="btnheader trust ">See all news<svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></a>
             </div>
 
             <div class="haberHeader">
                 <h3>Press release</h3>
-                <a href="" class="newsA">
+                <a href="news-detay" class="newsA">
                     <div class="newsLeftRed"></div>
-                    <p>Bureau Veritas enters the CAC 40 Paris stock index</p>
+                    <p>Eurolab appointed by international ECO LABEL programme</p>
                     <p class="dateNews"><strong>Dec. 17 2024</strong></p>
                     <p class="btnheader trust btnNews"><span>READ MORE</span><svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></p>
                 </a>
@@ -223,9 +223,9 @@ include('header.php');
 
             <div class="haberHeader">
                 <h3>Press release</h3>
-                <a href="" class="newsA">
+                <a href="news-detay" class="newsA">
                     <div class="newsLeftRed"></div>
-                    <p>Bureau Veritas strengthens its positioning in luxury and fashion through the acquisition of LBS Group</p>
+                    <p>Eurolab Re-Launches Sustainable Solutions Platform</p>
                     <p class="dateNews"><strong>Dec. 02 2024</strong></p>
                     <p class="btnheader trust btnNews"><span>READ MORE</span><svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.707,20.707a1,1,0,0,1-1.414-1.414L19.586,13H2a1,1,0,0,1,0-2H19.586L13.293,4.707a1,1,0,0,1,1.414-1.414l8,8a1,1,0,0,1,.216.325.986.986,0,0,1,0,.764,1,1,0,0,1-.216.325Z"/></svg></p>
                 </a>

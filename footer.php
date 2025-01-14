@@ -20,7 +20,7 @@
             <a href="careers">Careers</a>
             <a href="responsibility">Responsibility</a>
             <a href="site-map">Site map</a>
-            <a href="">News</a>
+            <a href="news">News</a>
         </div>
         <div class="footer-bottom">
             <p>Copyright © 2018 EUROLAB Laboratory Inc. All Rights Reserved.</p>
